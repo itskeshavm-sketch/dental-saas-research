@@ -1,22 +1,42 @@
-# Dental SaaS Market Research
+# WhatsApp Local Business Automation — Market Research
 
-Research repository for a vertical-specific workflow automation SaaS targeting the dental practice scheduling market, with HIPAA-compliant workflows and $99–$499/month pricing tiers.
+**Project:** Vertical workflow-automation SaaS for local shop owners who run their business through WhatsApp.
+**Analyst:** Panko (Market Strategist / BD) — GitHub-only research.
+**Connection:** GitHub (`itskeshavm-sketch`). All other apps are NOT connected to this workspace.
 
-## Research Docs
+> Scope note: Originally researched for the dental-scheduling market; **pivoted (2026-08-24)** to WhatsApp-using local businesses per project lead.
 
-| Doc | Focus | Status |
-|-----|-------|--------|
-| [TAM Sizing](docs/01-tam-sizing.md) | Market size, dental practice count, DSO adoption | Done |
-| [Competitor Analysis](docs/02-competitor-analysis.md) | DentiMax, Curve Dental, Henry Schein Dentrix gaps | Done |
-| [HIPAA Compliance Gaps](docs/03-hipaa-compliance-gaps.md) | Technical safeguards, BAA, Zapier/Make gaps | Done |
-| [Buyer Personas](docs/04-buyer-personas.md) | Practice managers, DSO IT leads | Done |
-| [Pricing Validation](docs/05-pricing-validation.md) | $99-$499/mo tier justification | Done |
-| [Outreach Plan](docs/06-outreach-plan.md) | Channels + DSO targets for early customers | Done |
+## Snapshot
 
-## Key Finding
+- **220M+ businesses** use WhatsApp Business globally (~90M on the free App, ~6M on Business API/Platform); **+27% YoY**.
+- **322M** formal micro/small enterprises worldwide (277M micro + 20M SME) — the addressable base for WhatsApp-based local commerce.
+- **Growth hotbeds:** Latin America ($18.2B WhatsApp-commerce volume in 2025, +35% YoY; Mexico +38% YoY), MENA (+41% message volume 2025), India (>$1B business-messaging market 2025).
+- **Meta monetization:** WhatsApp paid messaging hit a **$2B annual run rate by Q4 2025**; per-message billing (marketing/utility/authentication) replaced conversation pricing July 2025; **free customer-support replies end Oct 1, 2026**.
 
-Zapier and Make are **not** HIPAA-compliant and do not sign BAAs. A HIPAA-compliant scheduling automation platform that fills the Level 4/5 integration gap (real-time bidirectional PMS sync) can command a premium over legacy dental PMS add-ons.
+## Competitor snapshot (local-shop stack)
 
----
+| Tool | Model | Entry price | Notes |
+|---|---|---|---|
+| WhatsApp Business App | Free mobile app | $0 | Built-in Catalog, quick replies; 256-broadcast cap, **no shared inbox, no automation, no CRM sync** |
+| WATI | Platform + Meta fees | $49/mo (Starter) / $99 (Pro) | WhatsApp-first shared inbox, native Shopify, COD flows |
+| ManyChat | Platform + Meta fees | $29/mo (Pro, 2.5k contacts) | IG+FB+WA cross-channel, best for social-led funnels |
+| Chatfuel | Platform + Meta fees | $39/mo (Fuely Super) | Shifted to AI support; weaker e-commerce depth |
+| Twilio | Pay-per-message | $0 platform + Meta fees | Raw API; need dev to build inbox/automation |
+| Storefront overlays (Shoply, WaveOrder, Whatsell, eCatalog) | Platform | $9–49/mo | Add catalog/storefront on top of existing number |
 
-*Repo created 2026-08-24. Private / internal use.*
+## Key insight
+
+The free WhatsApp Business App is the on-ramp, but it caps at 256-broadcast and offers zero shared-inbox/automation/CRM sync — forcing growth shops onto **API platforms that charge Meta per-message fees ON TOP** of a monthly platform fee. Cost is therefore **unpredictable and explodes with volume** (and free support replies vanish Oct 1, 2026).
+
+**Opportunity:** A WhatsApp-native automation tool (shared inbox, team assignment, catalog + order board, light CRM sync, drip scheduling) priced as a **predictable monthly subscription with NO per-message Meta fees**, aimed at the gap between the free app and WATI/ManyChat — capturing local shop owners as they outgrow the free app.
+
+## Docs
+
+- `docs/01-tam-sizing.md` — TAM for WhatsApp-using local businesses.
+- `docs/02-competitor-analysis.md` — Free app, WATI, ManyChat, Chatfuel, Twilio, storefront overlays.
+- `docs/03-compliance-cost-gaps.md` — Per-message fee explosion, data lock-in, GDPR/PCI gaps, free-app automation limits.
+- `docs/04-buyer-personas.md` — Solo shop owner, growing local shop, multi-location operator.
+- `docs/05-pricing-validation.md` — Price positioning vs incumbents.
+- `docs/06-outreach-plan.md` — Early-customer interview targets.
+
+See open GitHub Issues for tracked action items.
