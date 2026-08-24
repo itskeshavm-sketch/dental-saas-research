@@ -1,59 +1,29 @@
-# Pricing Validation — $99-$499/mo Tiers
+# Pricing Validation — WhatsApp Local Business
 
-## Tier Structure
+**Status:** verified (web search, 2026-08-24) + framework applied
 
-| Tier | Price | Target | Features |
-|------|-------|--------|----------|
-| Starter | $99 | Solo / 1-2 op | Single PMS, 1 location, HIPAA BAA, real-time sync, basic workflows |
-| Growth | $299 | 3-8 op practices, DSO satellite | Multi-location, advanced rules, 5 integrations |
-| Enterprise | $499 | DSO HQ, chains | SSO/SAML, RBAC, audit trail, API access, unlimited locations |
+## The problem with today's stack
+- Free app = $0 but hard-capped and automation-less.
+- First paid rung = WATI $49 or ManyChat $29 — PLUS Meta per-message fees (marketing/utility/authentication, country-tiered). Free customer-support replies end Oct 1, 2026.
+- A 2,000-message month (common for a busy local shop doing COD confirmations + order updates) adds $40–$120 in Meta fees on top of the platform fee — i.e. the platform fee is often the smaller half of the bill.
 
-## Validation Against Competition
+## Proposed tier framing (vs incumbents)
+| Tier | Target | Monthly price (proposed) | Covers | vs incumbent |
+|---|---|---|---|---|
+| Starter | Solo shop outgrowing free app | $9 | Catalog + basic auto-reply + 500-msg billing cap | Beats storefront overlays ($9–49); no free-app broadcast cap |
+| Growth | Growing local shop (2–10 staff) | $29 | Shared inbox, team assignment, catalog, order board, light CRM sync, no per-message Meta surcharge (within cap) | Undercuts WATI ($49+Meta) / ManyChat ($29+Meta) on predictability |
+| Pro | Multi-location (10+ locations) | $49 | Multi-number dashboard, RBAC, analytics, export, higher caps | Cheaper than per-location WATI/ManyChat stacking |
 
-| Vendor / Tier | Price range | HIPAA BAA | True automation (L4/5) | Verdict |
-|---------------|------------|------------|----------------------|---------|
-| Dentrix on-prem | $300-$1,000 + $10k-$30k init | Yes | No (Level 1-2) | High upfront, basic scheduling |
-| Dentrix Ascend | $500-$1,500/location | Yes | No (Level 1-2) | Expensive for small practices |
-| Curve Dental | $500-$1,500/location | Yes | No (Level 1-2) | All-in-one but no workflow depth |
-| DentiMax | $169-$669 | Partial | No (Level 1-2) | Cheapest, limited automation |
-| Zapier | $20-$100 | No | Yes (L4/5) | Blocked for PHI |
-| Make | $9-$99 | No | Yes (L4/5) | Blocked for PHI |
-| n8n (self-hosted) | $0-$20 (infra only) | Yes | Yes | DIY burden; not dental-specific |
-| Our platform | $99-$499 | Yes | Yes (Level 4-5) | Unique value |
+## Key pricing moat
+- No Meta per-message pass-through is the value proposition, not a lower platform fee. A shop paying WATI $49 + $80 Meta fees pays us $29 + $0 -> same or lower headline, far more predictable.
+- Cap monthly messages (e.g. 5k / 10k / 25k) and absorb Meta fee risk into our margin so the merchant gets a flat bill.
 
-## Price Band Justification
+## Validation questions for interviews
+1. What was your single highest WhatsApp-platform bill in the last 3 months? How much was Meta fees vs platform?
+2. At what message volume would a flat $29/mo (no per-message fees) beat your current WATI/ManyChat spend?
+3. Would you pay $9/mo for a mobile-friendly catalog + 500-message cap to leave the free app?
 
-### Why $99 is defensible (below competitors)
+## Open item — tier-band conflict
+The project's original $99–$499/mo tier band is sized for the dental/DSO market. For WhatsApp local business the competitive ceiling is ~$29–$99 (WATI Pro $99, ManyChat Business $69, Chatfuel $59). A strict $99 entry is non-competitive vs the $29–49 API platforms — and a $499 multi-location tier is hard to justify vs WATI Enterprise at ~$299.
 
-- Legacy on-prem PMS demands $10k+ upfront - our cloud-native model eliminates hardware.
-- DentiMax starts at $169 - we undercut on entry while offering superior integration.
-- Small practices (135k US dental practices, mostly <6 operators) have budget constraints; $99 lands within discretionary budget for a productivity tool.
-
-### Why $499 is defensible (enterprise ceiling)
-
-- Curve Dental and Dentrix Ascend cloud charge $500-$1,500/location.
-- DSO IT leads expect enterprise features (SSO, RBAC, audit logs) delivered at half the per-location cost.
-- 84% of US dentists unaffiliated -> huge long tail; DSO consolidation -> high-value head.
-
-## Go-to-Market by Tier
-
-| Tier | Segment | % of market | Acquisition strategy |
-|------|---------|-------------|----------------------|
-| Starter ($99) | Solo/Solo-Hybrid practices (~95k+) | High volume | Self-serve, credit-card, dental-community content |
-| Growth ($299) | Small groups, DSO satellites (~30k) | Mid volume | Inside sales + channel partnerships (dental CPAs/consultants) |
-| Enterprise ($499) | DSOs, chains (~5k-20k) | High ARR | Enterprise sales + compliance-first narrative |
-
-## SOM Recap (Year 1 Targets)
-
-| Tier | Price | Customers | ARR |
-|------|-------|-----------|-----|
-| Starter | $99 | 10,000 | $11.9M |
-| Growth | $299 | 5,000 | $17.9M |
-| Enterprise | $499 | 500 | $3.0M |
-| Total | | 15,500 | $32.8M ARR |
-
-## Sources
-
-- Web search competitor pricing: Dentrix $300-$1,000 (on-prem) / $500-$1,500 (Ascend); Curve $500-$1,500; DentiMax $169-$669.
-- Web search: Zapier/Make not HIPAA-compliant (no BAA).
-- TAM sizing doc for practice counts.
+**Recommendation (flagged to Finch):** align the WhatsApp SKU to $9/$29/$49 tiers, and treat the $99–$499 band as the multi-account/anchor model (per-location seat under a head-enterprise account) — not a per-shop entry ceiling.
