@@ -1,68 +1,32 @@
-# Buyer Personas
+# Buyer Personas — WhatsApp Local Business
 
-Target market for HIPAA-compliant dental scheduling workflow automation, $99-$499/mo.
+**Status:** derived from WhatsApp Business platform pain-point research (web search 2026-08-24)
 
-## Persona 1: Practice Manager (Single-Site Practice)
+## Persona 1 — Solo shop owner (the free-app user)
+- **Profile:** 1 person; 10–500 customers; revenue < $50k/yr.
+- **Channels:** WhatsApp Business app only; maybe a physical stall or home kitchen.
+- **Goal:** take orders, reply fast, show a catalog, request payment.
+- **Pain:** can’t broadcast past 256; no catalog link to share; replies missed when phone is busy.
+- **Budget:** $0–$9/mo max; pays only if it stays mobile-friendly.
+- **Buying trigger:** "I missed three orders because I was in the kitchen."
 
-| Attribute | Detail |
-|----------|--------|
-| Role | Office / Practice Manager |
-| Practice size | 1-6 operators; 1 dentist |
-| Decision authority | Budget approver, vendor selector |
-| Pain points | Manual scheduling reconciliation, double-books, staff calling to confirm, insurance verification delays, PHI email leaks |
-| Budget control | $200-$600/mo for new tools |
-| Tech savviness | Moderate; prefers simple, no-IT setup |
-| Procurement trigger | Staff turnover exposing scheduling errors; patient safety/compliance concern |
-| Buying criteria | Quick setup (<30 min), no IT, clear BAA, no training burden |
-| Ideal tier | $99-$299/mo (Starter / Growth) |
+## Persona 2 — Growing local shop (2–10 staff)
+- **Profile:** 2–10 employees; 200–2,000 active WhatsApp customers; 1–3 locations.
+- **Channels:** WhatsApp Business API platform (WATI/ManyChat) or still on the free app sharing the phone.
+- **Goal:** shared inbox, team assignment, catalog + order board, repeat-customer recognition, CRM sync.
+- **Pain:** per-message Meta fees are unpredictable; team steps on each other; manual data entry into sheets/CRM.
+- **Budget:** $29–49/mo; would pay up to ~$79 for no-message-fee peace of mind.
+- **Buying trigger:** "This month's WhatsApp bill doubled because of COD confirmations."
 
-**Typical quote:** We spend 15 hrs/week on scheduling coordination. Our current PMS sends email alerts (Level 2). We need something that actually books directly - and our lawyer flagged that our staff are texting PHI in Slack/Make-style automations.
+## Persona 3 — Multi-location operator
+- **Profile:** 10+ locations / a small franchise; 2,000+ active customers; 10–50 staff across sites.
+- **Channels:** API platform with multiple numbers; wants central oversight.
+- **Goal:** manage all locations' WhatsApp numbers from one inbox; role-based access; per-location analytics; export data for accounting.
+- **Pain:** no multi-number dashboard; data siloed per location; per-message fees multiply across locations.
+- **Budget:** $49–99/mo; would pay more for central control + no per-message fees.
+- **Buying trigger:** "I can't see which location's orders are lagging / the Meta bill is across 12 numbers."
 
-## Persona 2: DSO IT Lead / Operations Director
-
-| Attribute | Detail |
-|----------|--------|
-| Role | IT / Operations, Dental Support Organization |
-| Practice size | 20-200+ locations |
-| Decision authority | Enterprise purchasing, security/compliance approval |
-| Pain points | Multi-location scheduling consistency, PHI breach liability across sites, vendor BAA sprawl, integration debt from point solutions |
-| Budget control | $500-$5k+/mo per location; centralized procurement |
-| Tech savviness | High; evaluates security, APIs, SSO, audit trail |
-| Procurement trigger | Centralized scheduling standard rollout; compliance audit finding; merger/acquisition integration |
-| Buying criteria | Enterprise BAA, SSO/SAML, RBAC, audit logs, API docs, multi-location rollout plan |
-| Ideal tier | $299-$499/mo (Growth / Enterprise) |
-
-**DSO market context:** US DSO market = $155.65B (2025), projected $302.54B (2035). 16% of US dentists DSO-affiliated (rising >25% among recent grads). DSOs consolidating aggressively - highest-value early customers (enterprise ARR, compliance rigor).
-
-## Persona 3: DSO Acquisition Lead (Emerging)
-
-| Attribute | Detail |
-|----------|--------|
-| Role | Strategy / M&A, DSO headquarters |
-| Decision authority | New-tool adoption for newly acquired practices |
-| Pain points | Onboarding 5-20 practices per quarter; need standardized, compliant scheduling fast |
-| Procurement trigger | Acquisition close; standardize scheduling tooling across portfolio |
-| Buying criteria | Rapid deployment, white-label-able, BAA at enterprise scale |
-| Ideal tier | Enterprise ($499/mo) with volume discounts |
-
-## Buyer Journey
-
-| Stage | Activity |
-|-------|----------|
-| Awareness | Practice manager sees scheduling errors - searches automated dental scheduling |
-| Consideration | Compares Dentrix add-ons vs general automation (Zapier blocked on PHI) |
-| Evaluation | Requests BAA, live demo on actual PMS version, references |
-| Purchase | Starter tier for single location; Growth for multi-location; Enterprise for DSOs |
-| Expansion | Add locations; add workflow modules (recall, payments, intake) |
-
-## Key Insight
-
-The DSO IT lead is the highest-ARR path: even 500 DSOs at $499/mo = $30M ARR ceiling at top tier. The practice manager is the volume/velocity path: 10k practices at $99-$299/mo = $20M+ ARR.
-
-A land-and-expand strategy targeting practice managers (Starter $99) with natural upgrade to DSO Enterprise ($499) aligns TAM, pricing band, and compliance differentiation.
-
-## Sources
-
-- ADA 2024: 135,665 dental practice establishments; 202,485 active dentists.
-- DSO affiliation: 16.1% (rising >25% for recent grads); DSO market $155.65B -> $302.54B by 2035.
-- Web search persona synthesis from scheduling automation pain-point research.
+## Land-and-expand
+- **Land:** Persona 2 (growing local shop) — $29–49/mo; quick, non-technical setup from a phone number.
+- **Expand:** as staff grow and locations multiply -> Tier up to Persona 3; add CRM sync, multi-number, analytics.
+- **Funnel pressure:** the free-app plateau (Persona 1) only converts when broadcast/assignment pain bites -> needs a sub-$9 or $9 "Starter" tier to pull them off $0 without jumping to $49.
