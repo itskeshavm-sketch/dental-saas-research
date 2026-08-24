@@ -1,70 +1,34 @@
-# Early Customer Outreach Plan
+# Early-Customer Interview & Outreach Plan — WhatsApp Local Business
 
-Feeds into GitHub issue #4 (identify early customer interview candidates).
+**Status:** derived from persona research (web search 2026-08-24)
 
-## Target Segments
+## Targets by persona
+### Growing local shop (Persona 2) — land
+- **Where they live:** local food stalls, boutique retailers, beauty salons, repair shops in India, Brazil, Mexico, Nigeria, South Africa that already post a WhatsApp catalog.
+- **Channels to reach them:**
+  - WhatsApp seller communities (groups for "makeup artists Mumbai", "street food vendors Sao Paulo", "hairdressers Lagos").
+  - Local Facebook groups ("Support local X city") where shops share their WhatsApp number.
+  - Instagram/WhatsApp micro-influencers who run a single shop.
+- **Hook:** "Is your WhatsApp bill sometimes bigger than your rent?" — open-ended, surfaces per-message fee pain.
 
-### 1. Practice Managers (volume lane, $99-$299 tier)
+### Multi-location operator (Persona 3) — expand / enterprise
+- Franchise micro-chains (10–30 locations) in the same emerging markets; often already on WATI/ManyChat.
+- Reach via franchise-association WhatsApp groups and local commerce associations.
 
-Solo / small group practices (<6 operators) currently using Dentrix, Curve Dental, or DentiMax.
+### Solo shop owner (Persona 1) — future funnel
+- Capture via the free app -> invite to a $9 "Starter" when they hit the 256-broadcast wall.
 
-**Community channels found (verified via web search 2026-08-24):**
+## Interview script (5 questions)
+1. How many customers message you on WhatsApp in a typical month?
+2. What's your highest WhatsApp-platform bill in 3 months, and how much was Meta fees vs platform?
+3. Which pains hit first — team stepping on replies, broadcast cap, missed messages, or bill shock?
+4. What would a flat $9/mo (Starter) and $29/mo (no per-message fees) tool need to do to replace what you use today?
+5. Who decides/pays for tools in your shop, and what's your budget ceiling?
 
-| Channel | Type | Access |
-|---------|------|--------|
-| Dental Office Manager Group | Facebook group | Public |
-| AADOM (American Association of Dental Office Management) | Private Facebook + exclusive forum | Membership required |
-| ADAM (Association of Dental Administrators and Managers) | Closed private Facebook group | Membership required |
-| DOMA (Dental Office Managers Alliance) | Membership platform + community | Paid membership |
-| DEO Growth Secrets | Facebook group | Public-ish |
-| Dentistry Forums | General industry forum | Public |
+## Validation criteria
+- >3 interviews confirming per-message bill shock as the #1 pain.
+- At least 2 shops where a $29 flat (no Meta fees) undercuts their current WATI + Meta spend.
+- One reference shop willing to a 5-min screen-share on their current WhatsApp Business setup.
 
-### 2. DSO IT Leads (enterprise lane, $299-$499 tier)
-
-**Top 3 DSO targets (verified):**
-
-| DSO | Practices | Notes |
-|-----|----------|-------|
-| Heartland Dental | 1,900+ offices (39 states + DC) | Largest US DSO - prime enterprise target |
-| The Aspen Group (TAG) | 1,100+ practices | Aspen Dental - large footprint |
-| PDS Health (Pacific Dental Services) | 1,000+ practices (25 states) | Enterprise-grade, known for tech adoption |
-
-## Outreach Strategy
-
-### Phase 1: Community channel engagement
-
-1. Join AADOM / DOMA / Dental Office Manager Group (Facebook).
-2. Listen for scheduling pain-point posts (double-booking, reconciliation, PHI texting).
-3. Offer value in comments (no hard sell): share HIPAA scheduling checklist, integration criteria guide.
-4. DM practice managers mentioning scheduling headaches with a short intro + contact.
-
-### Phase 2: DSO enterprise prospecting
-
-1. Target DSO corporate offices (not individual practices) - central IT leads.
-2. Research contact titles: IT Director, Operations Director, Practice Support Manager.
-3. Leverage DSO association networks (Dental Success Network/DSN - private membership, Workvivo platform).
-4. Value hook: central booking with real-time PMS sync + BAA - solves multi-location consistency + PHI liability.
-
-### Phase 3: Warm introductions via dental CPAs
-
-- Dental CPAs (e.g. KexPractice, Poston Consulting, ADG) have trusted relationships with practice managers.
-- Co-create a brief scheduling workflow audit checklist to offer through CPA partners.
-
-## Early Interview Guide (10-15 min)
-
-1. Current scheduling tool + PMS?
-2. How much time per week is spent on scheduling coordination / fixing double-books?
-3. Any PHI-compliance concerns (texting patients, email alerts)?
-4. Would real-time bidirectional sync (books straight into PMS) solve this?
-5. Budget range for a HIPAA-compliant scheduling automation tool?
-
-## Constraints
-
-- No Gmail / Calendar / LinkedIn / SMS tools currently connected.
-- Must use web + GitHub for documentation; outreach via community channels.
-- Do NOT claim Zapier/Make integration (not HIPAA-compliant).
-
-## Sources
-
-- Web search 2026-08-24: AADOM, ADAM, DOMA, DSN, Facebook groups, Heartland/Aspen/PDS practice counts.
-- Market sizing doc (docs/01-tam-sizing.md) for DSO market context.
+## Related issue
+- GitHub Issue #4 — "Qualify early customer interview candidates" (this plan feeds it).
