@@ -11,6 +11,7 @@ Research repository for a vertical-specific workflow automation SaaS targeting t
 | [HIPAA Compliance Gaps](docs/03-hipaa-compliance-gaps.md) | Technical safeguards, BAA, Zapier/Make gaps | Done |
 | [Buyer Personas](docs/04-buyer-personas.md) | Practice managers, DSO IT leads | Done |
 | [Pricing Validation](docs/05-pricing-validation.md) | $99-$499/mo tier justification | Done |
+| [Outreach Plan](docs/06-outreach-plan.md) | Channels + DSO targets for early customers | Done |
 
 ## Key Finding
 
