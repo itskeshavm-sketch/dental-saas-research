@@ -1,80 +1,42 @@
-# TAM Sizing — Dental Practice Scheduling Market
+# TAM Sizing — WhatsApp Local Business Ecosystem
 
-## Executive Summary
+**Status:** verified (web search, 2026-08-24)
 
-The total addressable market for dental practice scheduling workflow automation is a subset of the global dental practice management software (PMS) market, sized at $1.77B-$2.78B globally for 2025, growing at 8.6%-10.9% CAGR.
+## WhatsApp Business user base
 
-## Market Size (Global)
+- **220M+ businesses** use WhatsApp Business globally as of early 2026.
+  - **~90M** are small businesses on the free WhatsApp Business app.
+  - **~6M** are enterprises on the WhatsApp Business Platform/API.
+  - YoY growth: **+27%** (2025→2026).
+- The free app is the digital storefront of record for micro/small retailers in **India, Brazil, Nigeria, South Africa, Mexico** — markets where WhatsApp is the default customer-channel.
 
-| Metric | Value | Source |
-|--------|-------|--------|
-| Global dental PMS market 2025 | $1.77B - $2.78B | web search [1][2] |
-| Market 2024 | $1.62B - $2.2B | web search [1][3] |
-| Growth rate (CAGR) | 8.6% - 10.9% | web search [2][3][4][5] |
-| Drivers | AI/cloud integrations, DSO consolidation | web search [2][4][5] |
+## Formal addressable base
 
-> Estimates vary due to differing methodologies and inclusion criteria.
+- **322M** formal micro/small/medium enterprises globally (277M micro + 20M SME) — World Bank / SME Finance Forum.
+  - Broader estimates put global SMBs at **~380M** (definitions vary by country/employee count).
+- MSMEs represent **>90% of firms worldwide** → the long tail of WhatsApp-based local commerce.
 
-## US Dental Practice Installed Base
+## Regional commerce growth (2025)
 
-| Metric | Value | Source |
-|--------|-------|--------|
-| Dental practice establishments (US) | 135,665 | ADA 2024 |
-| Professionally active dentists (US) | 202,485 | ADA 2024 (59.5/100k pop) |
-| DSO-affiliated dentists | 16% / 16.1% | ADA 2024 |
-| Recent grads DSO-affiliated | >25% | ADA 2024 |
-| Dentists still unaffiliated | ~84% | ADA 2024 |
+- **Latin America:** WhatsApp-commerce volume **$18.2B in 2025**, **+35% YoY**; Mexico **+38% YoY**.
+- **MENA:** WhatsApp message volumes **+41% in 2025**.
+- **India:** business-messaging market **>$1B in revenue in 2025**, driven by WhatsApp Business + AI automation.
 
-## DSO Market (Key TAM Driver)
+## Meta monetization (WhatsApp Business revenue)
 
-| Metric | Value | Source |
-|--------|-------|--------|
-| US DSO market size 2025 | $155.65B | web search |
-| Projected 2035 | $302.54B | web search |
-| Driver | Private equity, operational efficiency, consolidation | web search |
+- Meta does **not** break out WhatsApp Business revenue as a separate line — it lives under Family-of-Apps “Other” revenue ($2.58B FY 2025).
+- **WhatsApp paid messaging = $2B annual run rate by Q4 2025.**
+- Pricing model shifted **July 1, 2025**: conversation-based → **per-message** billing across marketing/utility/authentication tiers (country-tiered).
+- **Free customer-support replies end Oct 1, 2026** → every delivered message then becomes a paid Meta fee.
 
-## Sizing the Scheduling Sub-segment
+## Market-sizing framework (for our SaaS)
 
-### Approach
+- **Free-app TAM anchor:** 90M small-business WhatsApp app users.
+- **Upgrade trigger:** businesses hitting the **256-broadcast cap**, needing a **shared inbox / team assignment**, or growing beyond solo operation.
+- **Paying-API TAM anchor:** 6M enterprises → high-value but saturated (WATI/ManyChat/Twilio/Salesforce).
+- **Core opportunity band:** the **millions of growing shops** between the free app ($0) and the $49–99/mo API platforms — price-sensitive, non-technical, no per-message-budget tolerance.
 
-1. Bottom-up: 135,665 practices x scheduling-automation penetration x ASP.
-2. Top-down: Allocate % of global PMS market to scheduling automation + HIPAA compliant tier premium.
+## Notes / caveats
 
-### Serviceable Obtainable Market (SOM) — Dental Scheduling Workflow SaaS
-
-Assumptions for $99-$499/mo tier:
-
-| Tier | Price/month | Target Segment | Est. Practices |
-|------|-------------|----------------|----------------|
-| Starter ($99) | $99 | Solo / 1-2 dentists, cloud PMS | ~95k |
-| Growth ($299) | $299 | 3-8 operator practices, DSO satellite | ~30k |
-| Enterprise ($499) | $499 | DSO HQ, multi-location | ~5k DSOs/chains |
-
-**SOM at scale (top 3 tiers):**
-
-| Tier | Price | Practices (est.) | ARR per tier | ARR |
-|------|-------|------------------|--------------|------|
-| Starter | $99 | 10,000 | $1,188 | $11.9M |
-| Growth | $299 | 5,000 | $3,588 | $17.9M |
-| Enterprise | $499 | 500 | $5,988 | $3.0M |
-| Total SOM (Year 1 target) | | 15,500 | | $32.8M ARR |
-
-## Competitive Pricing Context
-
-Legacy dental PMS platforms price opaquely (custom quote):
-
-| Platform | Reported Range | Notes | Source |
-|----------|----------------|-------|--------|
-| Dentrix (on-prem) | $300-$1,000/mo + $10k-$30k upfront | Per location | web search |
-| Dentrix Ascend (cloud) | $500-$1,500/mo/location | Cloud | web search |
-| Curve Dental | $500-$1,500/mo/location | All-in-one | web search |
-| DentiMax | $169-$669/mo | Budget-friendly | web search |
-
-**Gap:** No major dental PMS vendor offers a transparent <$500/mo tier with purpose-built scheduling workflow automation.
-
-## References
-
-[1] Global dental PMS market 2025 estimate $1.77B-$2.78B, 8.6%-10.9% CAGR.
-[2] 2024 market $1.62B-$2.2B; AI/cloud integration drivers.
-[3] 2025 market $2.78B; DSO consolidation driver.
-[4][5] Growth rate and methodology variance notes.
+- Definitions of “small business” vary; 277M (formal) vs 380M (broader) reflects inclusion criteria.
+- Much of the addressable base is in **emerging markets (India, Brazil, MENA, LatAm)** where WhatsApp is primary-commerce, not an add-on.
