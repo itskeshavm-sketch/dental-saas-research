@@ -1,60 +1,65 @@
-# Competitor Analysis — Dental Practice Scheduling
+# Competitor Analysis — WhatsApp Local Business Stack
 
-## Market Landscape
+**Status:** verified (web search, 2026-08-24)
 
-The dental PMS market is dominated by established players with legacy server-based deployments and recent cloud migrations. All use custom quoting (opaque pricing).
+## 1. WhatsApp Business App (the on-ramp / baseline)
 
-## Competitor Profiles
+- **Model:** free mobile app; 1 phone + up to 4 linked devices.
+- **Cap:** 256-contact broadcast lists.
+- **Strengths:** built-in product Catalog, quick replies, greeting/away messages, one-tap templates.
+- **Gaps (the pain):**
+  - **No shared inbox** / team collaboration → teams share devices/credentials (security risk).
+  - **No conversation assignment/routing** → duplicate or missed replies.
+  - **No scheduling, drip sequences, or advanced chatbot flows** → only static greeting/away.
+  - **No CRM / software sync** → manual data entry.
+  - **No analytics** beyond read receipts.
+- **Upgrade trigger:** “I’m losing sales because my teammate and I both replied / I can’t broadcast past 256 / I need a catalog link to share.”
 
-### 1. Dentrix (Henry Schein One)
+## 2. WATI (WhatsApp-first specialist)
 
-| Attribute | Detail |
-|-----------|--------|
-| Ownership | Henry Schein One |
-| Deployment | Server-based + cloud (Ascend) |
-| Strengths | Industry standard, deep clinical charting, extensive 3rd-party integrations, robust insurance billing |
-| Pricing | $300-$1,000/mo + $10k-$30k upfront (on-prem); $500-$1,500/mo/location (Ascend cloud) |
-| Integration depth | Middleware/Gateway for cloud; database-level scraping historically for legacy |
+- **Plans:** Starter $49/mo, Pro $99/mo, Enterprise ~$299/mo+ (contact-volume dependent).
+- **Plus:** **Meta per-message fees** on top (marketing/utility/authentication; free support replies end Oct 1, 2026).
+- **Strengths:** native shared inbox, team assignment, native **Shopify** integration (order updates, abandoned carts), COD-confirmation flows, WhatsApp-native.
+- **Gaps:** marketer-first UI; per-message-cost unpredictability; not catalog/storefront-native.
 
-### 2. Curve Dental
+## 3. ManyChat (cross-channel)
 
-| Attribute | Detail |
-|-----------|--------|
-| Deployment | Cloud-native |
-| Strengths | Minimal IT maintenance, 24/7 support, all-in-one, no separate clearinghouse/engagement fees |
-| Pricing | $500-$1,500/mo/location |
-| Integration depth | Cloud-native API; modern but closed ecosystem, limited 3rd-party workflow automation |
+- **Plans:** Pro $29/mo (≤2,500 contacts), Business $69/mo (+ per-contact overages).
+- **Plus:** **Meta per-message fees** on top.
+- **Strengths:** IG + FB + WhatsApp unified inbox; best-in-class social → purchase funnels; native Shopify abandoned-cart recovery.
+- **Gaps:** less WhatsApp-native; weaker shared-inbox/team features vs WATI; cost balloons past 2.5k contacts.
 
-### 3. DentiMax
+## 4. Chatfuel (Meta → AI support focus)
 
-| Attribute | Detail |
-|-----------|--------|
-| Deployment | Cloud + on-prem hybrid |
-| Strengths | Budget-friendly entry point |
-| Pricing | $169-$669/mo |
-| Integration depth | Limited workflow automation; basic 3rd-party sync |
+- **Plans:** Fuely Super $39/mo / Fuely Max $59/mo (150 active contacts each).
+- **Plus:** **Meta per-message/conversation fees** on top.
+- **Strengths:** GPT-4 autonomous AI agents; good for support bots.
+- **Gaps:** poor native Shopify/e-commerce depth; leans on Zapier for store integrations; contact-based cap.
 
-## Scheduling Automation Gap Analysis
+## 5. Twilio (developer / raw-API)
 
-Per research, dental scheduling automation vendors commonly offer Level 1-2 connectivity = notifications only (email/SMS to staff), which shifts workload rather than eliminating it.
+- **Model:** $0 platform fee; pay per-message + number rental.
+- **Strengths:** maximum flexibility; no per-seat cap.
+- **Gaps:** no UI; you build the inbox/automation yourself → needs engineering; Meta fees still apply.
 
-Effective automation requires Level 4-5 integration: bidirectional, real-time synchronization where AI reads live schedule availability and writes appointments directly into the PMS without manual reconciliation.
+## 6. Storefront / catalog overlays (no-API)
 
-### Verification Criteria (for evaluating any scheduling automation vendor)
+- Tools: **Shoply, WaveOrder, Lofaz, Whatsell, eCatalog**.
+- **Model:** typically **$9–49/mo** platform fee to add a catalog/storefront/chat-to-cart on top of the existing WhatsApp number.
+- **Strengths:** cheaper than API platforms; no per-message surcharge; built for shop owners, not devs.
+- **Gaps:** mostly storefront/catalog; weak automation/shared-inbox; fragmented ecosystem (no single leader).
 
-| # | Criterion | Why |
-|---|----------|-----|
-| 1 | Supported real-time API (open API / Middleware Gateway), not DB scraper | Reliability, compliance, no data corruption |
-| 2 | Live demo on prospects exact system/version in <5 min | Proves real integration, not canned demo |
-| 3 | Respects practice logic (provider rules, operatory constraints, appt durations) | Avoids double-booking/conflicts |
+## Competitive matrix
 
-**Finding:** No major dental PMS vendor today offers a transparent, HIPAA-compliant scheduling automation tier at the $99-$499/mo price band with Level 4-5 criteria. Legacy vendors bundle scheduling as a PMS feature, not a workflow automation product.
+| Tool | Shared inbox | Catalog/Storefront | Automation | CRM sync | Per-message Meta fee | Entry |
+|---|---|---|---|---|---|---|
+| WhatsApp Business App | ❌ | ✅ (basic) | ❌ (static only) | ❌ | ❌ | $0 |
+| WATI | ✅ | ✅ | ✅ | ✅ | ✅ | $49 |
+| ManyChat | ✅ | ✅ | ✅ | ✅ | ✅ | $29 |
+| Chatfuel | ✅ | ❌ | ✅ (AI) | ❌ | ✅ | $39 |
+| Twilio | (build) | (build) | (build) | (build) | ✅ | $0 |
+| Storefront overlays | ❌ | ✅ | ❌ | ❌ | ❌ | $9–49 |
 
-## Competitive Positioning Opportunity
+## Insight
 
-| Vendor | HIPAA BAA | Transparent Pricing | Workflow Automation | Price Band |
-|--------|-----------|---------------------|---------------------|------------|
-| Dentrix | Yes (BAA available) | No ($300-$1,500+) | No (Level 1-2) | $$ |
-| Curve Dental | Yes | No ($500-$1,500/location) | No (Level 1-2) | $$ |
-| DentiMax | Partial | Partial ($169-$669) | No (Level 1-2) | $ |
-| New entrant | Yes (built-in) | Yes ($99-$499) | Yes (Level 4-5) | $-$$ |
+Every paid API platform (WATI, ManyChat, Chatfuel, Twilio) **passes Meta’s per-message fees through to the merchant** — on top of a platform fee. There is **no** mainstream WhatsApp-native tool that gives a growing local shop a **shared inbox + catalog + light automation + CRM sync at a flat monthly price with no per-message surcharge**. That is the wedge.
